@@ -52,6 +52,7 @@
   position: absolute;
   transform: translateY(-300%);
   transition: transform 0.3s;
+  z-index: 1000;
 }
 
 .skip-to-content-link:focus {

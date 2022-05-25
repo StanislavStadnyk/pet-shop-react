@@ -12,7 +12,7 @@ import "./layout.scss";
 
 const Layout: FC = ({ children }) => (
   <div className="layout container">
-    <a className="skip-to-content-link" href="#main">
+    <a className="skip-to-content-link" href="#main" tabIndex={0}>
       Skip to content
     </a>
 

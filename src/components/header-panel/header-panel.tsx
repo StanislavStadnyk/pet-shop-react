@@ -20,7 +20,7 @@ const HeaderPanel = () => {
           <Input placeholder="username" />
         </InputGroup>
 
-        <Button color="info" outline>
+        <Button color="info" outline aria-label="some btn">
           <FontAwesomeIcon icon={faAnchor} />
         </Button>
       </div>
