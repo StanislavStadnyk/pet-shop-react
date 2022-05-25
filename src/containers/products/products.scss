@@ -1,0 +1,12 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100vh - 260px);
+    padding-top: 1rem;
+  }
+}

@@ -1,0 +1,123 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+$border-radius: 0.5rem;
+
+.card-item {
+  border-radius: $border-radius;
+  background: $white;
+  padding: 0.75rem 0.75rem 1.25rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .card-item__button-holder {
+      transform: translateY(0);
+    }
+  }
+
+  &__img {
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $gray-500;
+    border-radius: $border-radius;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+    &:hover {
+      .card-item__img-figure {
+        @include transition;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__img-figure {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+    color: $black;
+  }
+
+  &__price {
+    color: $blue;
+  }
+
+  &__weight {
+    color: $blue;
+    color: $gray-500;
+    font-size: 0.75rem;
+  }
+
+  &__button-holder {
+    @include transition;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    bottom: 0;
+    transform: translateY(100%);
+    background: rgba($gray-700, 0.2);
+
+    @include breakpoint(md) {
+      position: static;
+      transform: translateY(7px) !important;
+    }
+  }
+
+  &__counter {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    color: $white;
+  }
+
+  &--cart {
+    display: flex;
+    padding: 0;
+    margin-bottom: 10px;
+
+    .card-item {
+      &__img {
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        img {
+          transform: scale(0.1);
+        }
+      }
+
+      &__title {
+        font-size: 0.7rem;
+        margin-bottom: 0;
+      }
+
+      &__price {
+        font-size: 0.7rem;
+      }
+
+      &__info {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

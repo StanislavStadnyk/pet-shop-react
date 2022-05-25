@@ -1,0 +1,48 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.product-category {
+  padding: 0.5rem;
+  background: $white;
+  border-radius: 5px;
+  min-width: 150px;
+
+  &:hover {
+    background: $blue;
+
+    .product-category__icon {
+      background: $white;
+      color: $blue;
+    }
+  }
+
+  &__holder {
+    display: flex;
+    border-radius: 5px;
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: $gray-200;
+  }
+
+  &__name {
+    display: block;
+    font-size: 0.75rem;
+  }
+
+  &__items {
+    display: block;
+    font-size: 0.6rem;
+  }
+
+  &__text {
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
+}

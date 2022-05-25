@@ -1,0 +1,14 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.sidebar {
+  min-width: 80px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include breakpoint(md) {
+    min-width: 60px;
+  }
+}

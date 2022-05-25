@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+.navigation-link {
+  margin-bottom: 20px;
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    &.active,
+    &:hover {
+      background: $blue-200;
+      .svg-inline--fa {
+        color: $blue;
+      }
+    }
+  }
+
+  &:last-child {
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  .svg-inline--fa {
+    color: $gray-400;
+  }
+}

@@ -1,0 +1,11 @@
+@import "src/styles/mixins";
+
+.navigation {
+  height: 100%;
+  padding-bottom: 50px;
+  position: relative;
+
+  &__list {
+    @include list-reset;
+  }
+}

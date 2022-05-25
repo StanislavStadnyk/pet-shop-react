@@ -1,0 +1,17 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.product-categories {
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  &__list {
+    @include list-reset;
+    display: flex;
+
+    &-item {
+      margin-right: 0.5rem;
+    }
+  }
+}

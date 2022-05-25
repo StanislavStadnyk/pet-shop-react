@@ -1,0 +1,71 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.product-cart {
+  &__btn-cart {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+
+    @include breakpoint(md) {
+      right: 1rem;
+      top: 1rem;
+    }
+  }
+
+  &__list {
+    padding-top: 1rem;
+    overflow-y: auto;
+    height: 50%;
+  }
+
+  &__aside {
+    @include transition;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background: $white;
+    transform: translateX(0);
+    height: auto !important;
+    padding: 2rem;
+    overflow: visible !important;
+  }
+
+  &__total {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+  }
+
+  .collapse:not(.show) {
+    display: block !important;
+    transform: translateX(120%);
+    height: auto !important;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    font-size: 30px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+
+    span {
+      line-height: 34px;
+    }
+  }
+}
