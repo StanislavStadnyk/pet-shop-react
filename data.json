@@ -1,0 +1,66 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "All items",
+      "items": 245
+    },
+    {
+      "id": 1,
+      "name": "Dog food",
+      "items": 46
+    },
+    {
+      "id": 2,
+      "name": "Cat food",
+      "items": 12
+    },
+    {
+      "id": 3,
+      "name": "Accessories",
+      "items": 144
+    },
+    {
+      "id": 4,
+      "name": "Other",
+      "items": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "img": "img.jpg",
+      "title": "Dog food liven shmiven - very nice",
+      "price": 25.95,
+      "weight": 250
+    },
+    {
+      "id": 1,
+      "img": "img.jpg",
+      "title": "Dog food liven shmiven - very nice",
+      "price": 25.95,
+      "weight": 250
+    },
+    {
+      "id": 2,
+      "img": "img.jpg",
+      "title": "Dog food liven shmiven - very nice",
+      "price": 25.95,
+      "weight": 250
+    },
+    {
+      "id": 3,
+      "img": "img.jpg",
+      "title": "Dog food liven shmiven - very nice",
+      "price": 25.95,
+      "weight": 250
+    },
+    {
+      "id": 4,
+      "img": "img.jpg",
+      "title": "Dog food liven shmiven - very nice",
+      "price": 25.95,
+      "weight": 250
+    }
+  ]
+}
