@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 
 // styles
 import "./navigation-links.scss";
+import {PROD_URL} from "../../../config";
 
 type TProps = {
   icon: IconProp;
@@ -17,7 +18,7 @@ const NavigationLink: FC<TProps> = ({ icon, text, path }) => (
   <li className="navigation-link">
     <NavLink
       exact={true}
-      to={path}
+      to={`${PROD_URL}${path}`}
       className="navigation-link__item"
       aria-label={text}
     >

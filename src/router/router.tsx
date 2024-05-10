@@ -5,12 +5,13 @@ import { Route } from "react-router-dom";
 import HomePage from "../pages/home/home";
 import ProductsPage from "../pages/products/products";
 import ProductPage from "../pages/product/product";
+import {PROD_URL} from "../config";
 
 const MainRouter: FC = () => (
   <>
-    <Route exact path="/" component={HomePage} />
-    <Route path="/products" component={ProductsPage} />
-    <Route path="/product/:id" component={ProductPage} />
+    <Route exact path={`${PROD_URL}`} component={HomePage} />
+    <Route path={`${PROD_URL}/products`} component={ProductsPage} />
+    <Route path={`${PROD_URL}/product/:id`} component={ProductPage} />
   </>
 );
 
