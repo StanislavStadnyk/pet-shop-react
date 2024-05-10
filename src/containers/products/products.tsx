@@ -16,6 +16,7 @@ import { fetchData } from "../helpers";
 
 // styles
 import "./products.scss";
+import {PROD_URL} from "../../config";
 
 const Products = () => {
   // @ts-ignore
@@ -23,7 +24,7 @@ const Products = () => {
   const { isLoading } = state;
 
   useEffect(() => {
-    fetchData(dispatch, "/data.json");
+    fetchData(dispatch, `${PROD_URL}/data.json`);
   }, [dispatch]);
 
   return (
