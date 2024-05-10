@@ -15,6 +15,7 @@ import { ShopContext } from "../../../app";
 
 // styles
 import "./product-cart.scss";
+import {PROD_URL} from "../../../config";
 
 const ProductCart: FC = () => {
   const [isOpen, setCollapse] = useState(false);
@@ -38,7 +39,7 @@ const ProductCart: FC = () => {
         price={price}
         counter={counter}
         onClick={() => {}}
-        to={`${ROUTES.PRODUCT}/${id}`}
+        to={`${PROD_URL}${ROUTES.PRODUCT}/${id}`}
         type="cart"
       />
     )

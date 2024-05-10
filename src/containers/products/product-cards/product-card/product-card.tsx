@@ -8,6 +8,7 @@ import { ROUTES } from "../../../../constants/constants";
 
 // components
 import CardItem from "../../../../components/card-item/card-item";
+import {PROD_URL} from "../../../../config";
 
 const ProductCard: FC<TProduct> = ({
   id,
@@ -19,7 +20,7 @@ const ProductCard: FC<TProduct> = ({
   onClick,
 }) => (
   <CardItem
-    to={`${ROUTES.PRODUCT}/${id}`}
+    to={`${PROD_URL}${ROUTES.PRODUCT}/${id}`}
     id={id}
     title={title}
     img={img}

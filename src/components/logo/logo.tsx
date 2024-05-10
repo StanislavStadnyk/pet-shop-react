@@ -8,9 +8,10 @@ import { ROUTES } from "../../constants/constants";
 
 // styles
 import "./logo.scss";
+import {PROD_URL} from "../../config";
 
 const Logo = () => (
-  <Link className="logo" to={ROUTES.HOME}>
+  <Link className="logo" to={`${PROD_URL}${ROUTES.HOME}`}>
     <FontAwesomeIcon icon={faCarRear} />
   </Link>
 );
